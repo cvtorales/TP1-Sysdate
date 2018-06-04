@@ -1,0 +1,35 @@
+
+
+
+#ifndef TYPES__H
+#define TYPES__H
+
+#include <stdio.h>
+
+
+#define MAX_DATE_FORMAT 5
+#define MAX_STR_DATE 100
+
+
+typedef enum{
+				OK = 0,
+				ERROR_NULL_POINTER = 1,
+
+				ERROR_INVALID_NUMBER_OF_ARGUMENTS = 2,
+				ERROR_CMD_INVALID_FORMAT_DATE_FLAG = 3,
+				ERROR_CMD_INVALID_FORMAT_DATE,
+				ERROR_INVALID_ERROR_STATUS
+
+			}status_t;
+
+typedef enum{
+
+				DATE_FORMAT_DDMMAAAA = 0,
+				DATE_FORMAT_AAAADDD = 1,
+				DATE_FORMAT_AAAAMMDD = 2,
+				DATE_FORMAT_AAAAMMDDHHMMSS = 3,
+				DATE_FORMAT_AAAADDDHHMMSS = 4
+			}date_format_t;
+
+
+#endif
